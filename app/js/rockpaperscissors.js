@@ -85,8 +85,13 @@ function playToFive() {
 		playerMove=getPlayerMove(null);
 		computerMove=getComputerMove(null);
 		winner = getWinner(playerMove, computerMove);
-		if (winner =='computer') computerWins++;
-		if(winner =='player') playerWins++;
+		if (winner =='computer'){
+			 computerWins++;
+			console.log("computer won");
+		}
+		if(winner =='player'){
+			playerWins++;
+			console.log("you won");
 		if (winner=='Chuck Norris') console.log("Chuck Norris just kicked you in the face");
 		
 	}
